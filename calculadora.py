@@ -5,30 +5,28 @@ num3 = int(input("numero 3: "))
 valor = 0
 while True:
     print("""seleccione opcion
-            1- Sumar 
-            2- Restar
-            3- Multiplicar
-            4- dividir 
-            5- Sumar 3 numeros
+            1.- Suma 
+            2.- Resta
+            3.- Multiplicacion
+            4.- Divisón
+            5.- Suma 3 valores
+            6.- Salir del programa
         """)
 
-    valor = int(input("Elige una opcion: ") )     
+    valor = int(input("Elige una opcion:\n --> ") )     
 
     if valor == 1:
-        print("la suma es",num1+num2)
-        break;
-    if valor == 2:
-        print("la resta es",num1-num2)
-        break;
-    if valor == 3:
-        print("la multiplicacion es",num1*num2)
-        break;
-    if valor == 4:
-        print("la division es",num1/num2)
-        break;
-    if valor == 5:
-        print("La suma es: ",num1+num2+num3)
-        break;
+        print("La suma es: ",num1+num2)
+    elif valor == 2:
+        print("La resta es: ",num1-num2)
+    elif valor == 3:
+        print("La multiplicación es: ",num1*num2)
+    elif valor == 4:
+        print("La división es: ",num1/num2)
+    elif valor == 5:
+        print("La suma de los tres valores es: ",num1+num2+num3)
+    elif valor == 6:
+        print("Saliendo...")
+        break
     else:
         print("Opcion incorrecta")
-        break;
